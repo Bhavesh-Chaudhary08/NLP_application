@@ -205,7 +205,6 @@ class NLPApp:
             word = ent['word']
             label = ent['entity_group']
             score = ent['score']
-            # Clean word formatting (removes ## from subwords if any)
             clean_word = word.replace("##", "")
             result_lines.append(f"{clean_word} → {label} ({score:.2f})")
 
